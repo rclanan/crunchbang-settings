@@ -435,6 +435,11 @@
         <command>cb-exit</command>
       </action>
     </keybind>
+    <keybind key="W-Menu">
+    <action name="ShowMenu">
+    <menu>/Debian</menu>
+    </action>
+  </keybind>
     <keybind key="W-Tab">
       <action name="ShowMenu">
         <menu>client-list-combined-menu</menu>
@@ -804,6 +809,11 @@
 
     <context name="Root">
       <!-- Menus -->
+      <mousebind button="Left" action="Press"> 
+    <action name="ShowMenu"> 
+      <menu>/Debian</menu> 
+    </action> 
+    </mousebind> 
       <mousebind button="Middle" action="Press">
         <action name="ShowMenu">
           <menu>client-list-combined-menu</menu>
@@ -838,8 +848,8 @@
 
     <!-- default menu file (or custom one in $HOME/.config/openbox/) -->
     <!-- system menu files on Debian systems  -->
-    <file>/var/lib/openbox/debian-menu.xml</file>
-    <file>debian-menu.xml</file>
+    <file>/var/lib/openbox/debian-menu.xml</file> 
+  <file>debian-menu.xml</file> 
     <file>menu.xml</file>
     <hideDelay>200</hideDelay>
   <!-- if a press-release lasts longer than this setting (in milliseconds), the
